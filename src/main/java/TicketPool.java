@@ -16,6 +16,7 @@ public class TicketPool {
     public synchronized void addTicket() {
         while (ticketsQueue.size() >= maximumTicketCapacity) {
             try {
+                System.out.println(Thread.currentThread().getName() + " waiting to add tickets. Capacity reached.");
                 wait(); // Wait until there is space to add tickets
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
@@ -37,6 +38,7 @@ public class TicketPool {
     public synchronized Ticket buyTicket() {
         while (ticketsQueue.isEmpty()) {
             try {
+                System.out.println(Thread.currentThread().getName() + " waiting to buy tickets. No tickets available.");
                 wait(); // Wait until a ticket is available
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
