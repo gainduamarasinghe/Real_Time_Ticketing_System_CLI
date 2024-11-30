@@ -1,38 +1,108 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    // Class-level thread lists for vendors and customers
+    private static List<Thread> vendorThreads = new ArrayList<>();
+    private static List<Thread> customerThreads = new ArrayList<>();
+    private static TicketPool ticketPool;
+    private static boolean running = false;
+
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int totalAvailableTickets = InputValidation.getValidTickets(scan,"Enter the total number of tickets: ");
-        int ticketReleaseRate = InputValidation.getValidReleaseRate(scan, "Enter the ticket release rate: ");
-        int customerRetrievalRate = InputValidation.getValidRetrievalRate(scan, "Enter the customer retrieval rate: ");
+        // Get user inputs for configuration
+        int totalAvailableTickets = InputValidation.getValidTickets(scan, "Enter the total number of tickets: ");
+        int ticketReleaseRate = InputValidation.getValidReleaseRate(scan, "Enter the ticket release rate (in seconds): ");
+        int customerRetrievalRate = InputValidation.getValidRetrievalRate(scan, "Enter the customer retrieval rate (in seconds): ");
         int maximumTicketCapacity = InputValidation.getValidMaxTickets(scan, "Enter the maximum number of tickets: ");
 
+        // Display confirmation of inputs
         System.out.println("\nAll inputs validated successfully!");
         System.out.println("Total Tickets: " + totalAvailableTickets);
         System.out.println("Ticket Release Rate: " + ticketReleaseRate);
         System.out.println("Customer Retrieval Rate: " + customerRetrievalRate);
         System.out.println("Maximum Ticket Capacity: " + maximumTicketCapacity);
 
+        // Create and save configuration
         Configuration configuration = new Configuration(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate, maximumTicketCapacity);
         ConfigurationManager.saveConfigToJson(configuration);
 
-        TicketPool ticketPool = new TicketPool(maximumTicketCapacity);
+        // Initialize ticket pool
+        ticketPool = new TicketPool(maximumTicketCapacity, totalAvailableTickets);
 
-        Vendor[] vendors = new Vendor[10]; // Creating array of vendors
-        for (int i = 0; i < vendors.length; i++) {
-            vendors[i] = new Vendor(totalAvailableTickets, ticketReleaseRate, ticketPool);
-            Thread vendorThread = new Thread(vendors[i], "Vendor ID-" + i);
+        // Command loop for starting/stopping the system
+        while (true) {
+            System.out.println("\nEnter command (start/stop/exit): ");
+            String command = scan.nextLine().trim().toLowerCase();
+
+            if (command.equals("start")) {
+                if (!running) {
+                    // Start the ticketing system
+                    startTicketingSystem(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate);
+                    running = true;
+                    System.out.println("Ticket selling system started.");
+                } else {
+                    System.out.println("System is already running.");
+                }
+            } else if (command.equals("stop")) {
+                if (running) {
+                    stopTicketingSystem();
+                    running = false;
+                    System.out.println("Ticket selling system stopped.");
+                } else {
+                    System.out.println("System is not running yet.");
+                }
+            } else if (command.equals("exit")) {
+                if (running) {
+                    stopTicketingSystem();
+                }
+                System.out.println("Exiting the program...");
+                break;
+            } else {
+                System.out.println("Invalid command! Please enter 'start', 'stop', or 'exit'.");
+            }
+        }
+
+        scan.close();
+    }
+
+    // Method to start the ticketing system
+    private static void startTicketingSystem(int totalAvailableTickets, int ticketReleaseRate, int customerRetrievalRate) {
+        // Create and start vendor threads
+        int numberOfVendors = 5; // Number of vendors
+
+        for (int i = 0; i < numberOfVendors; i++) {
+            Vendor vendor = new Vendor(totalAvailableTickets / numberOfVendors, ticketReleaseRate, ticketPool);
+            Thread vendorThread = new Thread(vendor, "Vendor ID-" + i);
+            vendorThreads.add(vendorThread);
             vendorThread.start();
         }
 
-        Customer[] customers = new Customer[10]; // Creating array of customers
-        for (int i = 0; i < customers.length; i++) {
-            customers[i] = new Customer(ticketPool, customerRetrievalRate, 5); // Rerieve tickets from the pool
-            Thread customerThread = new Thread(customers[i], "Customer ID-" + i);
+        // Create and start customer threads
+        int numberOfCustomers = 5; // Number of customers
+
+        for (int i = 0; i < numberOfCustomers; i++) {
+            Customer customer = new Customer(ticketPool, customerRetrievalRate, totalAvailableTickets / numberOfCustomers);
+            Thread customerThread = new Thread(customer, "Customer ID-" + i);
+            customerThreads.add(customerThread);
             customerThread.start();
         }
+    }
 
+    // Method to stop the ticketing system
+    private static void stopTicketingSystem() {
+        // Stop all vendor threads
+        for (Thread vendorThread : vendorThreads) {
+            vendorThread.interrupt();
+        }
+        vendorThreads.clear();
+
+        // Stop all customer threads
+        for (Thread customerThread : customerThreads) {
+            customerThread.interrupt();
+        }
+        customerThreads.clear();
     }
 }
