@@ -1,9 +1,7 @@
-import java.math.BigDecimal;
-
-public class Vendor implements Runnable{
-    private int totalTickets; // Tickets willing to sell
-    private int ticketReleaseRate; // Frequency of releasing
-    private TicketPool ticketPool; // Shared resource between Vendors and Customers
+public class Vendor implements Runnable {
+    private int totalTickets;
+    private int ticketReleaseRate;
+    private TicketPool ticketPool;
 
     public Vendor(int totalTickets, int ticketReleaseRate, TicketPool ticketPool) {
         this.totalTickets = totalTickets;
@@ -13,13 +11,16 @@ public class Vendor implements Runnable{
 
     @Override
     public void run() {
-        for (int i = 1; i < totalTickets; i++) {
+        while (!Thread.currentThread().isInterrupted() && !ticketPool.shouldStop()) {
             ticketPool.addTicket();
             try {
-                Thread.sleep(ticketReleaseRate * 1000); // To calculate to MS
+                Thread.sleep(ticketReleaseRate * 100);
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                System.out.println(Thread.currentThread().getName() + " interrupted while releasing tickets.");
+                Thread.currentThread().interrupt();
+                break;
             }
         }
+        System.out.println(Thread.currentThread().getName() + " stopped.");
     }
 }
