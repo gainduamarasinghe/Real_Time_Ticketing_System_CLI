@@ -28,37 +28,49 @@ public class Main {
         ticketPool = new TicketPool(maximumTicketCapacity, totalAvailableTickets);
 
         while (true) {
-            System.out.println("\nEnter command (start/stop/exit): ");
+            System.out.print("\nEnter command (start/stop/exit): ");
             String command = scan.nextLine().trim().toLowerCase();
 
-            if (command.equals("start")) {
-                if (!running) {
-                    startTicketingSystem(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate);
-                    running = true;
-                    System.out.println("Ticket selling system started.");
-                } else {
-                    System.out.println("System is already running.");
-                }
-            } else if (command.equals("stop")) {
-                if (running) {
-                    stopTicketingSystem();
+            // Skip blank input
+            if (command.isEmpty()) {
+                continue; // Do not process blank inputs
+            }
+
+            switch (command) {
+                case "start":
+                    if (!running) {
+                        startTicketingSystem(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate);
+                        running = true;
+                        System.out.println("Ticket selling system started.");
+                    } else {
+                        System.out.println("System is already running.");
+                    }
+                    break;
+
+                case "stop":
+                    if (running) {
+                        stopTicketingSystem();
+                        running = false;
+                        System.out.println("Ticket selling system stopped.");
+                    } else {
+                        System.out.println("System is not running yet.");
+                    }
+                    break;
+
+                case "exit":
+                    if (running) {
+                        stopTicketingSystem();
+                    }
+                    System.out.println("Exiting the program...");
                     running = false;
-                    System.out.println("Ticket selling system stopped.");
-                } else {
-                    System.out.println("System is not running yet.");
-                }
-            } else if (command.equals("exit")) {
-                if (running) {
-                    stopTicketingSystem();
-                }
-                System.out.println("Exiting the program...");
-                break;
-            } else {
-                System.out.println("Invalid command! Please enter 'start', 'stop', or 'exit'.");
+                    scan.close();
+                    return; // Exit the program
+
+                default:
+                    System.out.println("Invalid command! Please enter 'start', 'stop', or 'exit'.");
+                    break;
             }
         }
-
-        scan.close();
     }
 
     private static void startTicketingSystem(int totalAvailableTickets, int ticketReleaseRate, int customerRetrievalRate) {

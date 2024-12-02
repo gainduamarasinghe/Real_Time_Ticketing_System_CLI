@@ -14,7 +14,7 @@ public class Customer implements Runnable {
         while (!Thread.currentThread().isInterrupted() && !ticketPool.shouldStop()) {
             ticketPool.buyTicket();
             try {
-                Thread.sleep(customerRetrievalRate * 100);
+                Thread.sleep(customerRetrievalRate * 1000);
             } catch (InterruptedException e) {
                 System.out.println(Thread.currentThread().getName() + " interrupted while retrieving tickets.");
                 Thread.currentThread().interrupt();
