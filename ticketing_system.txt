@@ -1,0 +1,224 @@
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-0 - current size is - 1
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-9 - current size is - 0 - Ticket is - Ticket{ticketID=1, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-9 - current size is - 1
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-8 - current size is - 2
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-6 - current size is - 3
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-2 - current size is - 4
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-5 - current size is - 5
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-7 - current size is - 6
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-2 - current size is - 5 - Ticket is - Ticket{ticketID=2, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-0 - current size is - 4 - Ticket is - Ticket{ticketID=3, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-1 - current size is - 3 - Ticket is - Ticket{ticketID=4, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-3 - current size is - 2 - Ticket is - Ticket{ticketID=5, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-5 - current size is - 1 - Ticket is - Ticket{ticketID=6, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-4 - current size is - 0 - Ticket is - Ticket{ticketID=7, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-3 - current size is - 1
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-1 - current size is - 2
+2024-12-03 00:37:12 - Ticket added by - Vendor ID-4 - current size is - 3
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-8 - current size is - 2 - Ticket is - Ticket{ticketID=8, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-7 - current size is - 1 - Ticket is - Ticket{ticketID=9, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:12 - Ticket bought by - Customer ID-6 - current size is - 0 - Ticket is - Ticket{ticketID=10, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:13 - Ticket added by - Vendor ID-0 - current size is - 1
+2024-12-03 00:37:13 - Ticket added by - Vendor ID-9 - current size is - 2
+2024-12-03 00:37:16 - Ticket bought by - Customer ID-2 - current size is - 1 - Ticket is - Ticket{ticketID=11, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:37:16 - Ticket bought by - Customer ID-9 - current size is - 0 - Ticket is - Ticket{ticketID=12, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-1 - current size is - 1
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-9 - current size is - 0 - Ticket is - Ticket{ticketID=1, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-9 - current size is - 1
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-8 - current size is - 2
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-7 - current size is - 3
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-6 - current size is - 4
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-5 - current size is - 5
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-3 - current size is - 6
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-0 - current size is - 7
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-2 - current size is - 8
+2024-12-03 00:42:11 - Ticket added by - Vendor ID-4 - current size is - 9
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-0 - current size is - 8 - Ticket is - Ticket{ticketID=2, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-2 - current size is - 7 - Ticket is - Ticket{ticketID=3, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-1 - current size is - 6 - Ticket is - Ticket{ticketID=4, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-3 - current size is - 5 - Ticket is - Ticket{ticketID=5, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-4 - current size is - 4 - Ticket is - Ticket{ticketID=6, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-5 - current size is - 3 - Ticket is - Ticket{ticketID=7, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-6 - current size is - 2 - Ticket is - Ticket{ticketID=8, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-7 - current size is - 1 - Ticket is - Ticket{ticketID=9, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:11 - Ticket bought by - Customer ID-8 - current size is - 0 - Ticket is - Ticket{ticketID=10, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-1 - current size is - 1
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-3 - current size is - 2
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-2 - current size is - 3
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-5 - current size is - 4
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-6 - current size is - 5
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-7 - current size is - 6
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-9 - current size is - 7
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-8 - current size is - 8
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-4 - current size is - 9
+2024-12-03 00:42:13 - Ticket added by - Vendor ID-0 - current size is - 10
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-1 - current size is - 11
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-3 - current size is - 12
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-6 - current size is - 13
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-5 - current size is - 14
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-8 - current size is - 15
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-2 - current size is - 16
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-4 - current size is - 17
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-9 - current size is - 18
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-7 - current size is - 19
+2024-12-03 00:42:15 - Ticket added by - Vendor ID-0 - current size is - 20
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-1 - current size is - 21
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-3 - current size is - 22
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-6 - current size is - 23
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-5 - current size is - 24
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-9 - current size is - 25
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-8 - current size is - 26
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-2 - current size is - 27
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-4 - current size is - 28
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-7 - current size is - 29
+2024-12-03 00:42:17 - Ticket added by - Vendor ID-0 - current size is - 30
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-1 - current size is - 31
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-5 - current size is - 32
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-3 - current size is - 33
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-9 - current size is - 34
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-8 - current size is - 35
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-6 - current size is - 36
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-2 - current size is - 37
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-4 - current size is - 38
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-7 - current size is - 39
+2024-12-03 00:42:19 - Ticket added by - Vendor ID-0 - current size is - 40
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-9 - current size is - 39 - Ticket is - Ticket{ticketID=11, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-0 - current size is - 38 - Ticket is - Ticket{ticketID=12, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-2 - current size is - 37 - Ticket is - Ticket{ticketID=13, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-1 - current size is - 36 - Ticket is - Ticket{ticketID=14, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-3 - current size is - 35 - Ticket is - Ticket{ticketID=15, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-4 - current size is - 34 - Ticket is - Ticket{ticketID=16, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-5 - current size is - 35
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-6 - current size is - 34 - Ticket is - Ticket{ticketID=17, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-7 - current size is - 33 - Ticket is - Ticket{ticketID=18, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-5 - current size is - 32 - Ticket is - Ticket{ticketID=19, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket bought by - Customer ID-8 - current size is - 31 - Ticket is - Ticket{ticketID=20, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-8 - current size is - 32
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-9 - current size is - 33
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-2 - current size is - 34
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-3 - current size is - 35
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-6 - current size is - 36
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-4 - current size is - 37
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-1 - current size is - 38
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-0 - current size is - 39
+2024-12-03 00:42:21 - Ticket added by - Vendor ID-7 - current size is - 40
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-5 - current size is - 41
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-9 - current size is - 42
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-3 - current size is - 43
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-2 - current size is - 44
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-8 - current size is - 45
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-6 - current size is - 46
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-4 - current size is - 47
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-1 - current size is - 48
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-0 - current size is - 49
+2024-12-03 00:42:23 - Ticket added by - Vendor ID-7 - current size is - 50
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-0 - current size is - 49 - Ticket is - Ticket{ticketID=21, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-5 - current size is - 50
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-9 - current size is - 49 - Ticket is - Ticket{ticketID=22, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-1 - current size is - 48 - Ticket is - Ticket{ticketID=23, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-2 - current size is - 47 - Ticket is - Ticket{ticketID=24, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-7 - current size is - 48
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-1 - current size is - 49
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-4 - current size is - 50
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-3 - current size is - 49 - Ticket is - Ticket{ticketID=25, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-0 - current size is - 50
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-8 - current size is - 49 - Ticket is - Ticket{ticketID=26, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-3 - current size is - 50
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-4 - current size is - 49 - Ticket is - Ticket{ticketID=27, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-6 - current size is - 48 - Ticket is - Ticket{ticketID=28, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-7 - current size is - 47 - Ticket is - Ticket{ticketID=29, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket bought by - Customer ID-5 - current size is - 46 - Ticket is - Ticket{ticketID=30, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-2 - current size is - 47
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-8 - current size is - 48
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-6 - current size is - 49
+2024-12-03 00:42:31 - Ticket added by - Vendor ID-9 - current size is - 50
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-0 - current size is - 49 - Ticket is - Ticket{ticketID=31, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-6 - current size is - 50
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-1 - current size is - 49 - Ticket is - Ticket{ticketID=32, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-9 - current size is - 48 - Ticket is - Ticket{ticketID=33, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-2 - current size is - 47 - Ticket is - Ticket{ticketID=34, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-9 - current size is - 48
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-8 - current size is - 49
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-3 - current size is - 50
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-7 - current size is - 49 - Ticket is - Ticket{ticketID=35, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-0 - current size is - 50
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-8 - current size is - 49 - Ticket is - Ticket{ticketID=36, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-3 - current size is - 48 - Ticket is - Ticket{ticketID=37, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-4 - current size is - 47 - Ticket is - Ticket{ticketID=38, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-6 - current size is - 46 - Ticket is - Ticket{ticketID=39, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket bought by - Customer ID-5 - current size is - 45 - Ticket is - Ticket{ticketID=40, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-2 - current size is - 46
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-5 - current size is - 47
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-7 - current size is - 48
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-1 - current size is - 49
+2024-12-03 00:42:41 - Ticket added by - Vendor ID-4 - current size is - 50
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-1 - current size is - 49 - Ticket is - Ticket{ticketID=41, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-9 - current size is - 48 - Ticket is - Ticket{ticketID=42, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-7 - current size is - 49
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-4 - current size is - 50
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-0 - current size is - 49 - Ticket is - Ticket{ticketID=43, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-2 - current size is - 48 - Ticket is - Ticket{ticketID=44, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-9 - current size is - 49
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-6 - current size is - 50
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-4 - current size is - 49 - Ticket is - Ticket{ticketID=45, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-5 - current size is - 48 - Ticket is - Ticket{ticketID=46, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-6 - current size is - 47 - Ticket is - Ticket{ticketID=47, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-7 - current size is - 46 - Ticket is - Ticket{ticketID=48, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-3 - current size is - 45 - Ticket is - Ticket{ticketID=49, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket bought by - Customer ID-8 - current size is - 44 - Ticket is - Ticket{ticketID=50, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-2 - current size is - 45
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-0 - current size is - 46
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-1 - current size is - 47
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-5 - current size is - 48
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-3 - current size is - 49
+2024-12-03 00:42:51 - Ticket added by - Vendor ID-8 - current size is - 50
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-2 - current size is - 49 - Ticket is - Ticket{ticketID=51, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-9 - current size is - 48 - Ticket is - Ticket{ticketID=52, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-1 - current size is - 47 - Ticket is - Ticket{ticketID=53, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-0 - current size is - 46 - Ticket is - Ticket{ticketID=54, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-8 - current size is - 45 - Ticket is - Ticket{ticketID=55, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-4 - current size is - 44 - Ticket is - Ticket{ticketID=56, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-5 - current size is - 43 - Ticket is - Ticket{ticketID=57, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-6 - current size is - 42 - Ticket is - Ticket{ticketID=58, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-7 - current size is - 41 - Ticket is - Ticket{ticketID=59, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:01 - Ticket bought by - Customer ID-3 - current size is - 40 - Ticket is - Ticket{ticketID=60, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-0 - current size is - 39 - Ticket is - Ticket{ticketID=61, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-2 - current size is - 38 - Ticket is - Ticket{ticketID=62, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-9 - current size is - 37 - Ticket is - Ticket{ticketID=63, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-1 - current size is - 36 - Ticket is - Ticket{ticketID=64, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-5 - current size is - 35 - Ticket is - Ticket{ticketID=65, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-8 - current size is - 34 - Ticket is - Ticket{ticketID=66, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-4 - current size is - 33 - Ticket is - Ticket{ticketID=67, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-7 - current size is - 32 - Ticket is - Ticket{ticketID=68, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-3 - current size is - 31 - Ticket is - Ticket{ticketID=69, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:11 - Ticket bought by - Customer ID-6 - current size is - 30 - Ticket is - Ticket{ticketID=70, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-0 - current size is - 29 - Ticket is - Ticket{ticketID=71, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-1 - current size is - 28 - Ticket is - Ticket{ticketID=72, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-9 - current size is - 27 - Ticket is - Ticket{ticketID=73, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-2 - current size is - 26 - Ticket is - Ticket{ticketID=74, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-3 - current size is - 25 - Ticket is - Ticket{ticketID=75, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-5 - current size is - 24 - Ticket is - Ticket{ticketID=76, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-8 - current size is - 23 - Ticket is - Ticket{ticketID=77, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-4 - current size is - 22 - Ticket is - Ticket{ticketID=78, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-7 - current size is - 21 - Ticket is - Ticket{ticketID=79, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:21 - Ticket bought by - Customer ID-6 - current size is - 20 - Ticket is - Ticket{ticketID=80, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-0 - current size is - 19 - Ticket is - Ticket{ticketID=81, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-9 - current size is - 18 - Ticket is - Ticket{ticketID=82, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-1 - current size is - 17 - Ticket is - Ticket{ticketID=83, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-2 - current size is - 16 - Ticket is - Ticket{ticketID=84, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-4 - current size is - 15 - Ticket is - Ticket{ticketID=85, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-5 - current size is - 14 - Ticket is - Ticket{ticketID=86, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-8 - current size is - 13 - Ticket is - Ticket{ticketID=87, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-3 - current size is - 12 - Ticket is - Ticket{ticketID=88, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-6 - current size is - 11 - Ticket is - Ticket{ticketID=89, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:31 - Ticket bought by - Customer ID-7 - current size is - 10 - Ticket is - Ticket{ticketID=90, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-0 - current size is - 9 - Ticket is - Ticket{ticketID=91, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-9 - current size is - 8 - Ticket is - Ticket{ticketID=92, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-1 - current size is - 7 - Ticket is - Ticket{ticketID=93, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-4 - current size is - 6 - Ticket is - Ticket{ticketID=94, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-8 - current size is - 5 - Ticket is - Ticket{ticketID=95, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-5 - current size is - 4 - Ticket is - Ticket{ticketID=96, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-3 - current size is - 3 - Ticket is - Ticket{ticketID=97, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-2 - current size is - 2 - Ticket is - Ticket{ticketID=98, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-6 - current size is - 1 - Ticket is - Ticket{ticketID=99, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}
+2024-12-03 00:43:41 - Ticket bought by - Customer ID-7 - current size is - 0 - Ticket is - Ticket{ticketID=100, eventName='Simple Event', ticketPrice=1000, location='Maharagama'}

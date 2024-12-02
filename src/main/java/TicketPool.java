@@ -32,6 +32,7 @@ public class TicketPool {
         totalTicketsReleased++;
         notifyAll();
         System.out.println("Ticket added by - " + Thread.currentThread().getName() + " - current size is - " + ticketsQueue.size());
+        Logger.log("Ticket added by - " + Thread.currentThread().getName() + " - current size is - " + ticketsQueue.size());
     }
 
     public synchronized Ticket buyTicket() {
@@ -49,6 +50,7 @@ public class TicketPool {
             totalTicketsSold++;
             notifyAll();
             System.out.println("Ticket bought by - " + Thread.currentThread().getName() + " - current size is - " + ticketsQueue.size() + " - Ticket is - " + ticket);
+            Logger.log("Ticket bought by - " + Thread.currentThread().getName() + " - current size is - " + ticketsQueue.size() + " - Ticket is - " + ticket);
             return ticket;
         }
         return null;
