@@ -29,6 +29,7 @@ public class Main {
 
         while (true) {
             System.out.print("\nEnter command (start/stop/exit): ");
+            scan.nextLine();
             String command = scan.nextLine().trim().toLowerCase();
 
             // Skip blank input
@@ -42,6 +43,7 @@ public class Main {
                         startTicketingSystem(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate);
                         running = true;
                         System.out.println("Ticket selling system started.");
+                        scan.nextLine();
                     } else {
                         System.out.println("System is already running.");
                     }
@@ -52,6 +54,7 @@ public class Main {
                         stopTicketingSystem();
                         running = false;
                         System.out.println("Ticket selling system stopped.");
+                        return; // Exit the program after stopping the threads
                     } else {
                         System.out.println("System is not running yet.");
                     }
@@ -62,7 +65,6 @@ public class Main {
                         stopTicketingSystem();
                     }
                     System.out.println("Exiting the program...");
-                    running = false;
                     scan.close();
                     return; // Exit the program
 

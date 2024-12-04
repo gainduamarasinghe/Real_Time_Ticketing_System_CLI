@@ -10,7 +10,10 @@ public class Logger {
 
     static {
         try {
-            writer = new BufferedWriter(new FileWriter(LOG_FILE, true)); // Append mode
+            // Initialize the writer without append mode, to overwrite the log file each time
+            writer = new BufferedWriter(new FileWriter(LOG_FILE)); // No 'true' to avoid appending
+            // Register a shutdown hook to ensure the writer is closed properly
+            Runtime.getRuntime().addShutdownHook(new Thread(Logger::close));
         } catch (IOException e) {
             System.err.println("Failed to initialize logger: " + e.getMessage());
         }
@@ -42,4 +45,3 @@ public class Logger {
         }
     }
 }
-

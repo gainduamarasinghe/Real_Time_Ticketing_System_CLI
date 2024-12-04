@@ -14,7 +14,7 @@ public class Vendor implements Runnable {
         while (!Thread.currentThread().isInterrupted() && !ticketPool.shouldStop()) {
             ticketPool.addTicket();
             try {
-                Thread.sleep(ticketReleaseRate * 100);
+                Thread.sleep(ticketReleaseRate * 1000);
             } catch (InterruptedException e) {
                 System.out.println(Thread.currentThread().getName() + " interrupted while releasing tickets.");
                 Thread.currentThread().interrupt();
