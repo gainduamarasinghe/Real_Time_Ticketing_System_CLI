@@ -11,16 +11,17 @@ public class Customer implements Runnable {
 
     @Override
     public void run() {
+        int customerId = ticketPool.getCustomerIdForThread(); // Get the customer ID for the current thread
         while (!Thread.currentThread().isInterrupted() && !ticketPool.shouldStop()) {
             ticketPool.buyTicket();
             try {
                 Thread.sleep(customerRetrievalRate * 1000);
             } catch (InterruptedException e) {
-                System.out.println(Thread.currentThread().getName() + " interrupted while retrieving tickets.");
+                System.out.println("Customer-" + customerId + " interrupted while retrieving tickets.");
                 Thread.currentThread().interrupt();
                 break;
             }
         }
-        System.out.println(Thread.currentThread().getName() + " stopped.");
+        System.out.println("Customer-" + customerId + " stopped.");
     }
 }

@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Welcome configuration ");
+        System.out.println("Configurations");
         // Getting inputs
         int totalAvailableTickets = InputValidation.getValidTickets(scan, "Enter the total number of tickets: ");
         int ticketReleaseRate = InputValidation.getValidReleaseRate(scan, "Enter the ticket release rate (in seconds): ");
@@ -32,7 +32,7 @@ public class Main {
         ticketPool = new TicketPool(maximumTicketCapacity, totalAvailableTickets);
 
         System.out.println();
-        System.out.println("Enter command to start or stop the system (start/q):");
+        System.out.println("Enter command to start or stop the system (start/q): ");
         // Start a separate thread to listen for "start" and "q" commands
         commandListener = new Thread(() -> listenForCommands(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate));
         commandListener.start();

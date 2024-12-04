@@ -11,16 +11,18 @@ public class Vendor implements Runnable {
 
     @Override
     public void run() {
+        int vendorId = ticketPool.getVendorIdForThread(); // Get the vendor ID for the current thread
         while (!Thread.currentThread().isInterrupted() && !ticketPool.shouldStop()) {
             ticketPool.addTicket();
             try {
                 Thread.sleep(ticketReleaseRate * 1000);
             } catch (InterruptedException e) {
-                System.out.println(Thread.currentThread().getName() + " interrupted while releasing tickets.");
+                System.out.println("Vendor-" + vendorId + " interrupted while releasing tickets.");
                 Thread.currentThread().interrupt();
                 break;
             }
         }
-        System.out.println(Thread.currentThread().getName() + " stopped.");
+        System.out.println("Vendor-" + vendorId + " stopped.");
     }
+
 }
