@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        // Get configuration inputs from user
         int totalAvailableTickets = InputValidation.getValidTickets(scan, "Enter the total number of tickets: ");
         int ticketReleaseRate = InputValidation.getValidReleaseRate(scan, "Enter the ticket release rate (in seconds): ");
         int customerRetrievalRate = InputValidation.getValidRetrievalRate(scan, "Enter the customer retrieval rate (in seconds): ");
@@ -22,14 +23,15 @@ public class Main {
         System.out.println("Customer Retrieval Rate: " + customerRetrievalRate);
         System.out.println("Maximum Ticket Capacity: " + maximumTicketCapacity);
 
+        // Save configuration
         Configuration configuration = new Configuration(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate, maximumTicketCapacity);
         ConfigurationManager.saveConfigToJson(configuration);
 
+        // Initialize TicketPool
         ticketPool = new TicketPool(maximumTicketCapacity, totalAvailableTickets);
 
         while (true) {
             System.out.print("\nEnter command (start/stop/exit): ");
-            scan.nextLine();
             String command = scan.nextLine().trim().toLowerCase();
 
             // Skip blank input
@@ -43,7 +45,6 @@ public class Main {
                         startTicketingSystem(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate);
                         running = true;
                         System.out.println("Ticket selling system started.");
-                        scan.nextLine();
                     } else {
                         System.out.println("System is already running.");
                     }
@@ -54,7 +55,6 @@ public class Main {
                         stopTicketingSystem();
                         running = false;
                         System.out.println("Ticket selling system stopped.");
-                        return; // Exit the program after stopping the threads
                     } else {
                         System.out.println("System is not running yet.");
                     }
@@ -66,7 +66,8 @@ public class Main {
                     }
                     System.out.println("Exiting the program...");
                     scan.close();
-                    return; // Exit the program
+                    System.exit(0); // Forcefully exit the program
+                    break;
 
                 default:
                     System.out.println("Invalid command! Please enter 'start', 'stop', or 'exit'.");
@@ -96,13 +97,27 @@ public class Main {
     }
 
     private static void stopTicketingSystem() {
+        // Interrupt all vendor threads
         for (Thread vendorThread : vendorThreads) {
             vendorThread.interrupt();
+            try {
+                vendorThread.join(); // Wait for the thread to finish
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                System.out.println("Error while stopping vendor thread: " + vendorThread.getName());
+            }
         }
         vendorThreads.clear();
 
+        // Interrupt all customer threads
         for (Thread customerThread : customerThreads) {
             customerThread.interrupt();
+            try {
+                customerThread.join(); // Wait for the thread to finish
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                System.out.println("Error while stopping customer thread: " + customerThread.getName());
+            }
         }
         customerThreads.clear();
 
