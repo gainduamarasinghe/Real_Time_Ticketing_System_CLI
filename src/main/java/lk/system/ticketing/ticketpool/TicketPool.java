@@ -1,3 +1,7 @@
+package lk.system.ticketing.ticketpool;
+
+import lk.system.ticketing.logger.Logger;
+
 import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -55,7 +59,7 @@ public class TicketPool {
         notifyAll(); // Notify waiting customers and vendors
         int vendorId = getVendorId();
         System.out.println("Ticket added by Vendor-" + vendorId + " - current size is " + ticketsQueue.size());
-        Logger.log("Ticket added by Vendor-" + vendorId + " - current size is " + ticketsQueue.size());
+        Logger.log("Vendor-" + vendorId + " - current size is " + ticketsQueue.size());
     }
 
     public synchronized Ticket buyTicket() {
@@ -74,8 +78,8 @@ public class TicketPool {
             totalTicketsSold++;
             notifyAll(); // Notify vendor threads
             int customerId = getCustomerId();
-            System.out.println("Ticket bought by Customer-" + customerId + " - current size is " + ticketsQueue.size() + " - Ticket is " + ticket);
-            Logger.log("Ticket bought by Customer-" + customerId + " - current size is " + ticketsQueue.size() + " - Ticket is " + ticket);
+            System.out.println("Ticket bought by Customer-" + customerId + " - current size is " + ticketsQueue.size() + " - " + ticket);
+            Logger.log("Ticket bought by Customer-" + customerId + " - current size is " + ticketsQueue.size() + " - " + ticket);
             return ticket;
         }
         return null; // No ticket available, or stop condition met

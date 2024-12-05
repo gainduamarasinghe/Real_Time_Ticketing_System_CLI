@@ -1,3 +1,5 @@
+package lk.system.ticketing.configuration;
+
 public class Configuration {
     private int totalTickets;
     private int ticketReleaseRate;
@@ -45,7 +47,7 @@ public class Configuration {
 
     @Override
     public String toString() {
-        return "Configuration{" +
+        return "lk.system.ticketing.configuration.Configuration{" +
                 "totalTickets=" + totalTickets +
                 ", ticketReleaseRate=" + ticketReleaseRate +
                 ", customerRetrievalRate=" + customerRetrievalRate +

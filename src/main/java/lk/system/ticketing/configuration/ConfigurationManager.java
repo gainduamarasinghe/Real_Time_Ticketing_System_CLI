@@ -1,3 +1,5 @@
+package lk.system.ticketing.configuration;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

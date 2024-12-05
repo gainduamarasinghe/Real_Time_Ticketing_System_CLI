@@ -1,3 +1,7 @@
+package lk.system.ticketing.users;
+
+import lk.system.ticketing.ticketpool.TicketPool;
+
 public class Vendor implements Runnable {
     private int totalTickets;
     private int ticketReleaseRate;

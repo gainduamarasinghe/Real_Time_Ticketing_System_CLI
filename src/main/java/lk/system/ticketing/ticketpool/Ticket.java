@@ -1,3 +1,5 @@
+package lk.system.ticketing.ticketpool;
+
 import java.math.BigDecimal;
 
 public class Ticket {
@@ -47,7 +49,7 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return "Ticket{" +
+        return "Ticket is {" +
                 "ticketID=" + ticketID +
                 ", eventName='" + eventName + '\'' +
                 ", ticketPrice=" + ticketPrice +

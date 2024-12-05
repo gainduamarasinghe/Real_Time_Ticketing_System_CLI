@@ -1,3 +1,5 @@
+package lk.system.ticketing.validation;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -41,7 +43,7 @@ public class InputValidation {
                         break;
                     }
                 } else {
-                    System.out.println("Ticket release rate must be a positive integer!");
+                    System.out.println("lk.system.ticketing.ticketpool.Ticket release rate must be a positive integer!");
                 }
             } else {
                 System.out.println("Invalid input! Please enter a positive integer.");
@@ -66,7 +68,7 @@ public class InputValidation {
                         break;
                     }
                 } else {
-                    System.out.println("Customer retrieval rate must be a positive integer!");
+                    System.out.println("lk.system.ticketing.users.Customer retrieval rate must be a positive integer!");
                 }
             } else {
                 System.out.println("Invalid input! Please enter a positive integer.");

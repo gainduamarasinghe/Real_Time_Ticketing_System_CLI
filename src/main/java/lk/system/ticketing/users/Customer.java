@@ -1,3 +1,7 @@
+package lk.system.ticketing.users;
+
+import lk.system.ticketing.ticketpool.TicketPool;
+
 public class Customer implements Runnable {
     private TicketPool ticketPool;
     private int customerRetrievalRate;

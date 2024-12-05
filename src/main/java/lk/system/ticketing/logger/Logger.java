@@ -1,3 +1,5 @@
+package lk.system.ticketing.logger;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;

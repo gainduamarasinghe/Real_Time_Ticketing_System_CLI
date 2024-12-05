@@ -1,3 +1,10 @@
+import lk.system.ticketing.configuration.Configuration;
+import lk.system.ticketing.configuration.ConfigurationManager;
+import lk.system.ticketing.ticketpool.TicketPool;
+import lk.system.ticketing.users.Customer;
+import lk.system.ticketing.users.Vendor;
+import lk.system.ticketing.validation.InputValidation;
+
 import java.util.Scanner;
 import java.util.concurrent.*;
 
@@ -12,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Configurations");
+        System.out.println("-----Configurations-----");
         // Getting inputs
         int totalAvailableTickets = InputValidation.getValidTickets(scan, "Enter the total number of tickets: ");
         int ticketReleaseRate = InputValidation.getValidReleaseRate(scan, "Enter the ticket release rate (in seconds): ");
@@ -31,7 +38,7 @@ public class Main {
 
         ticketPool = new TicketPool(maximumTicketCapacity, totalAvailableTickets);
 
-        System.out.println();
+        System.out.println("-----------------------------------------------------");
         System.out.println("Enter command to start or stop the system (start/q): ");
         // Start a separate thread to listen for "start" and "q" commands
         commandListener = new Thread(() -> listenForCommands(totalAvailableTickets, ticketReleaseRate, customerRetrievalRate));
@@ -92,8 +99,12 @@ public class Main {
             Customer customer = new Customer(ticketPool, customerRetrievalRate, totalAvailableTickets / numberOfCustomers);
             customerExecutor.submit(customer); // Submit tasks to the thread pool
         }
+        System.out.println("""
+                --------------------------------
+                Ticketing system is now running.
+                --------------------------------
+                """);
 
-        System.out.println("Ticketing system is now running.");
     }
 
     private static void monitorThreadPools() {
